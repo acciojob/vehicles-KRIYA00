@@ -22,9 +22,9 @@ int currentSpeed;
          * speed 201-250: gear 5
          * speed more than 250: gear 6
          */
- System.out.println("get current speed "+getCurrentSpeed());
+ //System.out.println("get current speed "+getCurrentSpeed());
        int newSpeed= getCurrentSpeed()+rate;
-        System.out.println("newspeed "+newSpeed);
+      //  System.out.println("newspeed "+newSpeed);
 
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
