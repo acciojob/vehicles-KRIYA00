@@ -8,8 +8,7 @@ public class Car extends Vehicle {
     private boolean isManual;
     private int currentGear;
     private int seats;
-     int currentDirection;
-    public int currentSpeed;
+
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats)
     {
@@ -53,15 +52,7 @@ public class Car extends Vehicle {
         return seats;
     }
 
-    @Override
-    public int getCurrentDirection() {
-        return currentDirection;
-    }
 
-    @Override
-    public int getCurrentSpeed() {
-        return currentSpeed;
-    }
 
     public void changeGear(int newGear){
         currentGear=newGear;
@@ -69,7 +60,7 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-        move(newSpeed,newDirection);
+        super.move(newSpeed,newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 }

@@ -22,7 +22,7 @@ int currentSpeed;
          * speed 201-250: gear 5
          * speed more than 250: gear 6
          */
-
+ System.out.println("get current speed "+getCurrentSpeed());
        int newSpeed= getCurrentSpeed()+rate;
         System.out.println("newspeed "+newSpeed);
 
@@ -33,9 +33,8 @@ int currentSpeed;
         }
         //for all other cases, change the gear accordingly
 
-        if(newSpeed > 0) {
-            changeSpeed(newSpeed, getCurrentDirection());
-        }
+
+
             else if(newSpeed>0 && newSpeed<=50)
             changeGear(1);
             else if(newSpeed>50 && newSpeed<=100)
@@ -48,6 +47,9 @@ int currentSpeed;
             changeGear(5);
             else if(newSpeed>250)
             changeGear(6);
+        if(newSpeed > 0) {
+            changeSpeed(newSpeed, getCurrentDirection());
+        }
         }
     }
 
