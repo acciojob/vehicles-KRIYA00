@@ -21,8 +21,8 @@ public class Car extends Vehicle {
         this.isManual=isManual;
         this.type=type;
         this.seats=seats;
-        this.currentDirection=super.getCurrentDirection();
-        this.currentSpeed=super.getCurrentSpeed();
+
+
     }
 
     public int getWheels() {
