@@ -3,7 +3,16 @@ package com.driver;
 public class F1 extends Car
 {
     public String name;
-int currentSpeed;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned

@@ -1,6 +1,18 @@
 package com.driver;
 
 public class Vehicle {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection;
+    }
+
     public String getName() {
         return name;
     }
@@ -24,17 +36,6 @@ public class Vehicle {
 
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed = currentSpeed;
-    }
-
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
-    }
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
